@@ -40,7 +40,10 @@ gulp.task('scripts', ['scripts-lib', 'scripts-tests']);
 gulp.task('lint', function() {
   return gulp.src(paths.scripts)
     .pipe(jshint({
-      esnext: true
+      esnext: true,
+      globals: {
+        Reflect: true
+      }
     }))
     .pipe(jshint.reporter('jshint-stylish'));
 });

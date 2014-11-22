@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/stephen/beedle",
   "dependencies": {
+    "harmony-reflect": "^1.1.1",
     "parse": "^1.3.0",
     "source-map-support": "^0.2.8",
     "traceur": "0.0.74"
