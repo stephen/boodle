@@ -5,10 +5,13 @@ Beedle is an experimental ES6 ODM for [parse.com](parse.com) backends. It lets y
 
 ## example
 
-```
+```javascript
 co(function* () {
+
   // shiny new es6 class syntax
   class TestModel extends BaseModel {
+
+    // working on making this better, but...
     get definition() {
       return {
         test: 'string'
@@ -18,17 +21,16 @@ co(function* () {
 
   // put a new model in the db
   var createdModel = yield TestModel.generate();
-
   var newToken = createdModel.token;
 
-  // loadedModel is the model, re-fetched from the db
+  // re-fetch from the db
   var loadedModel = yield TestModel.load(newToken);
 
   // we can directly set model properties:
   loadedModel.test = 'hello';
   yield loadedModel.save();
 
-  // let's reload the model from the db
+  // let's reload the model from the db for kicks
   yield loadedModel.refresh();
 
   // this will output 'hello'!
@@ -36,6 +38,8 @@ co(function* () {
 
   // good bye model...
   yield loadedModel.delete();
+
+  // this is null:
   var deletedModel = yield TestModel.load(newToken);
 });
 ```
