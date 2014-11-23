@@ -1,17 +1,17 @@
 {
-  "name": "beedle",
+  "name": "boodle",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:stephen/beedle.git"
+    "url": "git@github.com:stephen/boodle.git"
   },
   "author": "Stephen Wan <stephen@stephenwan.net>",
   "bugs": {
-    "url": "https://github.com/stephen/beedle/issues"
+    "url": "https://github.com/stephen/boodle/issues"
   },
-  "homepage": "https://github.com/stephen/beedle",
+  "homepage": "https://github.com/stephen/boodle",
   "dependencies": {
     "harmony-reflect": "^1.1.1",
     "parse": "^1.3.0",

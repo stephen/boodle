@@ -1,7 +1,7 @@
-beedle
+Boodle
 ======
 
-Beedle is an experimental ES6 ODM for [parse.com](parse.com) backends. It lets you do delightful things like `yield` for asynchronous tasks, directly get or set model values, and use the new ES6 class definitions.
+Boodle is an experimental ES6 ODM for [parse.com](parse.com) backends. It lets you do delightful things like `yield` for asynchronous tasks, directly get or set model values, and use the new ES6 class definitions.
 
 ## example
 
