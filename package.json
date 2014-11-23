@@ -1,6 +1,6 @@
 {
   "name": "boodle",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,8 @@
     "traceur": "0.0.74"
   },
   "scripts": {
-    "test": "gulp build && node --harmony build/tests"
+    "test": "gulp build && node --harmony build/tests",
+    "prepublish": "gulp build"
   },
   "devDependencies": {
     "co": "^4.0.0",
